@@ -2,7 +2,7 @@
     {
         "id" : 1,
         "name" : "Amir Hamza",
-        "review" :"",
+        "reviews" :"I have seen my friends wearing watches of different colors and shapes and so when I asked my parents, they were willing to get me this watch.",
         "ratting" : "5star",
         "img" : "Optional"
     },
@@ -10,30 +10,35 @@
     {
         "id" : 2,
         "name" : "Ayob Ali",
+        "reviews" : "The watch that I got was really beautifully and trendy. It was the Ben 10 watch, which I am very fond of.",
         "ratting" : "4.5star",
         "img" : "Optional"
     },
     {
         "id" : 3,
         "name" : "Shohel shak",
+        "reviews" : "Inside the dial, the base is white in color. The numbers in the dial are all fluorescent and therefore it glows at night. ",
         "ratting" : "4star",
         "img" : "Optional"
     },
     {
         "id" : 4,
         "name" : "Billal",
+        "reviews" : "The minute needle and the second’s needle also have their tips translucent, so at night, even that glows.",
         "ratting" : "5star",
         "img" : "Optional"
     },
     {
         "id" : 5,
         "name" : "Soinik",
+        "reviews" :"The most attractive feature of this watch is the flexibility of the strap.",
         "ratting" : "4.5star",
         "img" : "Optional"
     },
     {
         "id" : 6,
         "name" : "Jewel",
+        "reviews":"Apart from bending and wrapping to the wrist, it could also be folded in many shapes and designs",
         "ratting" : "4star",
         "img" : "Optional"
     }

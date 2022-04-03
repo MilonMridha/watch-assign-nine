@@ -1,9 +1,18 @@
 import React from 'react';
+import useReview from '../../hooks/useReview';
 import image from '../../image/watch2.png'
+import CustomerReviews from '../CustomerReviews/CustomerReviews';
 import './Home.css'
 
 
 const Home = () => {
+
+    const [reviews, setReviews] = useReview();
+    const threeReview = reviews.slice(0, 3);
+    
+
+
+
     return (
         <div className='container mt-5'>
             <div className='row main'>
@@ -17,8 +26,19 @@ const Home = () => {
                 </div>
                 <div className='container mt-5'>
                     <h2>Customer Reviews</h2>
+                    <div className=' container row row-cols-1 row-cols-md-3 g-4 mt-2'>
+                    {
+                       threeReview.map(review =><CustomerReviews
+                       review={review}
+                       key={review.id}
+                       ></CustomerReviews>) 
+                    }
+                    </div>
+                    
+                    
                 </div>
             </div>
+            
         </div>
     );
 };
