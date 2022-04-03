@@ -69,7 +69,7 @@ const DashBoard = () => {
             <div className='mt-5 '>
                 <h3>BarChart</h3>
                 <BarChart width={700} height={500} data={data}>
-                    <Bar dataKey={'revenue'} barSize={40} fill='red'></Bar>
+                    <Bar dataKey={'revenue'} barSize={40} fill='red' ></Bar>
                     <Bar dataKey={'investment'} barSize={50} fill='purple'></Bar>
                     <XAxis dataKey='month'></XAxis>
                     <YAxis></YAxis>
