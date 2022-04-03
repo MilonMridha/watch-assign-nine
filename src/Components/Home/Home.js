@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useReview from '../../hooks/useReview';
 import image from '../../image/watch2.png'
 import CustomerReviews from '../CustomerReviews/CustomerReviews';
@@ -9,9 +10,6 @@ const Home = () => {
 
     const [reviews, setReviews] = useReview();
     const threeReview = reviews.slice(0, 3);
-    
-
-
 
     return (
         <div className='container mt-5'>
@@ -27,18 +25,21 @@ const Home = () => {
                 <div className='container mt-5'>
                     <h2>Customer Reviews</h2>
                     <div className=' container row row-cols-1 row-cols-md-3 g-4 mt-2'>
-                    {
-                       threeReview.map(review =><CustomerReviews
-                       review={review}
-                       key={review.id}
-                       ></CustomerReviews>) 
-                    }
+                        {
+                            threeReview.map(review => <CustomerReviews
+                                review={review}
+                                key={review.id}
+                            ></CustomerReviews>)
+                        }
                     </div>
-                    
-                    
+
+
                 </div>
+
             </div>
-            
+            <div className='mt-3 p-3 mb-4'>
+                <Link className='btn btn-primary' to="/review">See All Reviews</Link>
+            </div>
         </div>
     );
 };

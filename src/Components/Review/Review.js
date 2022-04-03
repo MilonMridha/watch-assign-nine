@@ -1,14 +1,12 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-
-const CustomerReviews = (props) => {
-    const { review } = props;
-    const { name, reviews, ratting } = review;
-
+const Review = (props) => {
+    const {review} = props;
+    const {name, reviews, ratting} = review;
     return (
-        <div>
-            <Card style={{ width: '18rem' }} className="shadow rounded">
+        <div className='container'>
+             <Card style={{ width: '18rem' }} className="shadow rounded">
                 <Card.Body className='bg-light'>
                     <Card.Title>Name: {name}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted"> Ratting : {ratting}</Card.Subtitle>
@@ -21,4 +19,4 @@ const CustomerReviews = (props) => {
     );
 };
 
-export default CustomerReviews;
+export default Review;

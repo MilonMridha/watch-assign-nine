@@ -14,9 +14,9 @@ const Header = () => {
 
                         <Nav className="ms-auto 'text-light'">
                             <Link to="/"  >Home</Link>
-                            <Link to="/restaurent" className='ms-3'>Reviews</Link>
-                            <Link to="/about" className='ms-3'>Dashboard</Link>
-                            <Link to="/about" className='ms-3'>Blogs</Link>
+                            <Link to="/review" className='ms-3'>Reviews</Link>
+                            <Link to="/dashboard" className='ms-3'>Dashboard</Link>
+                            <Link to="/blogs" className='ms-3'>Blogs</Link>
                             <Link to="/about" className='ms-3'>About</Link>
 
                         </Nav>
