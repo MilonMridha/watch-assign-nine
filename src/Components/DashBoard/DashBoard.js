@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from 'react';
+
 import { Bar, BarChart, CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
-import Chart from '../Chart/Chart';
+
 
 const DashBoard = () => {
 
-    // const [charts, setCharts] = useState([]);
-
-    // useEffect(()=>{
-    //     fetch('rechartData.json')
-    //     .then(res => res.json())
-    //     .then(data =>setCharts(data))
-    // },[])
 
     const data = [
         {
@@ -52,33 +45,33 @@ const DashBoard = () => {
     ]
 
     return (
-        <div className='container mt-5'>
-            <div className=' container row row-cols-1'>
-            <div>
-                <h3>LineChart</h3>
-                <LineChart width={700} height={500} data={data}>
-                    <Line type="monotone" dataKey={'sell'} stroke="red"></Line>
-                    <Line type="monotone" dataKey={'revenue'} stroke="green"></Line>
-                    <Line type="monotone" dataKey={'investment'} stroke="blue"></Line>
-                    <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                    <XAxis dataKey={'month'}></XAxis>
-                    <YAxis></YAxis>
-                    <Tooltip></Tooltip>
-                </LineChart>
-            </div>
-            <div className='mt-5 '>
-                <h3>BarChart</h3>
-                <BarChart width={700} height={500} data={data}>
-                    <Bar dataKey={'revenue'} barSize={40} fill='red' ></Bar>
-                    <Bar dataKey={'investment'} barSize={50} fill='purple'></Bar>
-                    <XAxis dataKey='month'></XAxis>
-                    <YAxis></YAxis>
-                    <Tooltip></Tooltip>
+        <div className='container mx-auto w-100 ps-0 mt-5 '>
+            <div className='row'>
+                <div className='col-md-6 col-12'>
+                    <h3 className='text-start'>LineChart</h3>
+                    <LineChart width={370} height={400} data={data}>
+                        <Line type="monotone" dataKey={'sell'} stroke="red"></Line>
+                        <Line type="monotone" dataKey={'revenue'} stroke="green"></Line>
+                        <Line type="monotone" dataKey={'investment'} stroke="blue"></Line>
+                        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+                        <XAxis dataKey={'month'}></XAxis>
+                        <YAxis></YAxis>
+                        <Tooltip></Tooltip>
+                    </LineChart>
+                </div>
+                <div className='col-md-6 col-12'>
+                    <h3 className='text-start'>BarChart</h3>
+                    <BarChart width={370} height={400} data={data}>
+                        <Bar dataKey={'revenue'} barSize={40} fill='red' ></Bar>
+                        <Bar dataKey={'investment'} barSize={50} fill='purple'></Bar>
+                        <XAxis dataKey='month'></XAxis>
+                        <YAxis></YAxis>
+                        <Tooltip></Tooltip>
 
-                </BarChart>
+                    </BarChart>
+                </div>
             </div>
-            </div>
-            
+
         </div>
 
     );

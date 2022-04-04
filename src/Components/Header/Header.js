@@ -1,23 +1,23 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import  CustomLink  from '../CustomLink/CustomLink'
 
 const Header = () => {
     return (
         <div>
-            <Navbar className='rounded' bg="warning" expand="lg">
+            <Navbar className='rounded' bg="primary" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home" className='text-dark' > <h3>Review My Watch</h3> </Navbar.Brand>
+                    <Navbar.Brand href="#home" className='text-dark' > <h3>Review My <span className='text-warning'>Watch</span></h3> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav" className=''>
+                    <Navbar.Collapse id="basic-navbar-nav">
 
 
                         <Nav className="ms-auto 'text-light'">
-                            <Link to="/"  >Home</Link>
-                            <Link to="/review" className='ms-3'>Reviews</Link>
-                            <Link to="/dashboard" className='ms-3'>Dashboard</Link>
-                            <Link to="/blogs" className='ms-3'>Blogs</Link>
-                            <Link to="/about" className='ms-3'>About</Link>
+                            <CustomLink to="/"  >Home</CustomLink>
+                            <CustomLink to="/review" className='ms-3'>Reviews</CustomLink>
+                            <CustomLink to="/dashboard" className='ms-3'>Dashboard</CustomLink>
+                            <CustomLink to="/blogs" className='ms-3'>Blogs</CustomLink>
+                            <CustomLink to="/about" className='ms-3'>About</CustomLink>
 
                         </Nav>
                     </Navbar.Collapse>

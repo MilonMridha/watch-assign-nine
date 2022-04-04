@@ -23,7 +23,7 @@ const Home = () => {
                     <img src={image} alt="" />
                 </div>
                 <div className='container mt-5'>
-                    <h2>Customer Reviews</h2>
+                    <h2 className='text-primary'>Customer Reviews</h2>
                     <div className=' container row row-cols-1 row-cols-md-3 g-4 mt-2'>
                         {
                             threeReview.map(review => <CustomerReviews
